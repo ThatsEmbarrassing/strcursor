@@ -1,0 +1,1 @@
+export { DeclarationFactory } from "./DeclarationFactory";
