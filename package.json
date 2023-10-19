@@ -1,11 +1,12 @@
 {
   "name": "strcursor",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "./dist/js/index.js",
   "module": "./dist/js/index.js",
   "typings": "./dist/types/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "CHANGELOG.md"
   ],
   "repository": {
     "type": "git",
