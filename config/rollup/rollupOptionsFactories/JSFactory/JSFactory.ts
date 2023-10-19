@@ -1,6 +1,6 @@
 import { resolve } from "path";
 
-import type { OutputOptions, RollupOptions } from "rollup";
+import type { RollupOptions } from "rollup";
 
 import clear from "rollup-plugin-delete";
 import esbuild, { minify } from "rollup-plugin-esbuild";
@@ -9,10 +9,6 @@ import alias from "@rollup/plugin-alias";
 import { isProduction, makeConditionalPlugin } from "../helpers";
 
 import type { JSFactoryProps } from "./types";
-import type { Mode } from "../types";
-
-const setSourcemap = (mode: Mode): OutputOptions["sourcemap"] =>
-  isProduction(mode) && "hidden";
 
 export function JSFactory({
   input,
@@ -43,7 +39,6 @@ export function JSFactory({
       format: "cjs",
       name: "[name].js",
       exports: "named",
-      sourcemap: setSourcemap(mode),
       chunkFileNames: "chunks/[name]-[hash].chunk.js",
     },
   };

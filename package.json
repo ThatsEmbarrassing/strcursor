@@ -1,5 +1,5 @@
 {
-  "name": "string-cursor",
+  "name": "strcursor",
   "version": "0.1.0",
   "main": "./dist/js/index.js",
   "module": "./dist/js/index.js",
@@ -18,7 +18,12 @@
     "build:lib:production": "npm run rollup:base-config -- --environment mode:production",
     "build": "npm run build:lib:production"
   },
-  "keywords": ["string", "str", "string cursor", "string utils"],
+  "keywords": [
+    "string",
+    "str",
+    "string cursor",
+    "string utils"
+  ],
   "author": "",
   "license": "MIT",
   "exports": {
@@ -50,25 +55,17 @@
     "@rollup/plugin-alias": "^5.0.0",
     "@rollup/plugin-typescript": "^11.1.2",
     "@tinkoff/utils": "^2.6.2",
-    "@types/jest": "^29.5.4",
+    "@types/jest": "^29.5.5",
     "@types/ramda": "^0.29.3",
-    "@types/rollup": "^0.54.0",
-    "@types/webpack": "^5.28.1",
     "concurrently": "^8.2.1",
-    "docsify-cli": "^4.4.2",
-    "jest": "^29.6.3",
+    "jest": "^29.7.0",
     "rollup": "^3.28.1",
     "rollup-plugin-delete": "^2.0.0",
     "rollup-plugin-dts": "^6.0.0",
     "rollup-plugin-esbuild": "^5.0.0",
     "rollup-plugin-ts": "^3.4.4",
-    "sonicware-tdt": "^20.0.0",
     "ts-essentials": "^9.3.2",
     "ts-node": "^10.9.1",
-    "typedoc": "^0.24.8",
-    "typedoc-gitlab-wiki-theme": "^1.1.0",
-    "typedoc-plugin-localization": "^3.0.1",
-    "typedoc-plugin-markdown": "^3.16.0",
     "typescript": "^5.1.6",
     "utility-types": "^3.10.0"
   },
