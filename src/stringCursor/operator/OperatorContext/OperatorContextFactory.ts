@@ -26,7 +26,7 @@ export class OperatorContextFactory implements IOperatorContextFactory {
   }
 
   private getChar(by: number) {
-    return this.text[this.clamp(by)];
+    return this.text[this.clamp(by)] ?? "";
   }
 
   private move(to: number) {
@@ -37,7 +37,7 @@ export class OperatorContextFactory implements IOperatorContextFactory {
   private bind<Args extends [...unknown[]], Result>(
     emptyOperator: EmptyOperator<IOperatorContext, Args, Result>
   ) {
-    const builtOperator = emptyOperator.build(this.getContext());
+    const builtOperator = emptyOperator.buildOperator(this.getContext());
 
     return builtOperator;
   }

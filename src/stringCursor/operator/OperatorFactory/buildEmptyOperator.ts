@@ -1,7 +1,6 @@
-import { buildOperator } from "./buildOperator";
-
 import type { EmptyOperator } from "../OperatorContext";
 import type { Operator } from "./types";
+import { OperatorFactory } from "./OperatorFactory";
 
 export function buildEmptyOperator<
   Context extends object,
@@ -10,14 +9,14 @@ export function buildEmptyOperator<
 >(
   operator: Operator<Context, Args, Result>
 ): EmptyOperator<Context, Args, Result> {
-  const build = (context: Context) => {
-    return buildOperator({
-      operator,
-      context,
-    });
+  const operatorFactory = new OperatorFactory(operator);
+
+  const buildOperator = (context: Context) => {
+    operatorFactory.bind(context);
+    return operatorFactory.build();
   };
 
   return {
-    build,
+    buildOperator,
   };
 }

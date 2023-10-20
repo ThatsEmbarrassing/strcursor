@@ -17,5 +17,5 @@ export interface EmptyOperator<
    * @param context - string cursor's context
    * @returns - bound cursor function
    */
-  build: (context: Context) => BoundOperator<Args, Result>;
+  buildOperator: (context: Context) => BoundOperator<Args, Result>;
 }

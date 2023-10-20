@@ -1,4 +1,4 @@
-import type { IOperatorContext } from "./IOperatorContext.interface";
+import type { IOperatorContext } from "../types";
 
 export interface IOperatorContextFactory {
   getContext(): IOperatorContext;

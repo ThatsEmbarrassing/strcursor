@@ -1,15 +1,11 @@
-import { OperatorFactory } from "./OperatorFactory";
-
 import type { BuildOperatorProps } from "./types";
+
+import { buildEmptyOperator } from "./buildEmptyOperator";
 
 export function buildOperator<
   Context extends object,
   Args extends [...unknown[]],
   Result
 >({ context, operator }: BuildOperatorProps<Context, Args, Result>) {
-  const newOperator = new OperatorFactory(operator);
-
-  newOperator.bind(context);
-
-  return newOperator.build();
+  return buildEmptyOperator(operator).buildOperator(context);
 }

@@ -19,13 +19,11 @@ export interface CharObject {
 export const peekRelative = createEmptyOperator<[from: number], CharObject>(
   ({ getChar, apply, lastCharIndex }, from: number) => {
     const position = apply(calculateRelative, from);
-    const char = getChar(position);
-    const isLastChar = position === lastCharIndex;
 
     return {
-      char,
       position,
-      isLastChar,
+      char: getChar(position),
+      isLastChar: position === lastCharIndex,
     };
   }
 );
