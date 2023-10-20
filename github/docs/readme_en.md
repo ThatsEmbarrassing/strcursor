@@ -311,7 +311,7 @@ console.log(apply(peekRelative, 2)); // { char: 'e', position: 4, isLastChar: fa
       <td><em>number</em></td>
     </tr>
     <tr>
-      <td>peekRelative</td>
+      <td id="peekRelative">peekRelative</td>
       <td>
         Takes a relative position (relative to the current cursor position) and calculates an absolute position. Can take negative values.
         Returns an object with information about the character whose position matches the calculated absolute position.
