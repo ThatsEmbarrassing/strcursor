@@ -19,7 +19,8 @@
     "rollup:base-config": "rollup -c rollup.config.ts --configPlugin rollup-plugin-ts",
     "build:lib:development": "npm run rollup:base-config -- --environment mode:development",
     "build:lib:production": "npm run rollup:base-config -- --environment mode:production",
-    "build": "npm run build:lib:production"
+    "build": "npm run build:lib:production",
+    "test": "jest"
   },
   "keywords": [
     "string",
