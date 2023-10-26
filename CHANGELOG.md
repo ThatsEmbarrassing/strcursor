@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 
+- Class operators - you will be able to create operators by wrapping classes with createEmptyOperator and createOperator functions for more complex logic.
+- Changing string - there will be created methods in createEmptyOperator and createOperator functions that will help you add, remove or replace symbols from the string.
+- Custom store manager - i'm going to create my own store manager that will be used for operator context.
+- Plugin support.
+
+## [[0.1.3]](https://github.com/ThatsEmbarrassing/strcursor/releases/tag/0.1.3) - 2023.10.26
+
+### Other
+
+- Small source code improvements.
+- Removed unnecessary dependencies.
+
 ## [[0.1.2]](https://github.com/ThatsEmbarrassing/strcursor/releases/tag/0.1.2) - 2023.10.21
 
 ### Fixes

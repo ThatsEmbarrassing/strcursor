@@ -1,4 +1,4 @@
-import { curriedClamp } from "./curriedClamp";
+import { createClamp } from "./createClamp";
 import { getLastTextIndex } from "./getLastTextIndex";
 
 export type CreateTextBoundsFunction = (
@@ -6,4 +6,4 @@ export type CreateTextBoundsFunction = (
 ) => (value: number) => number;
 
 export const createTextBounds: CreateTextBoundsFunction = (text) =>
-  curriedClamp(0, getLastTextIndex(text));
+  createClamp(0, getLastTextIndex(text));

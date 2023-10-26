@@ -1,6 +1,6 @@
-import { createTextBounds, getLastTextIndex } from "../../../lib";
+import { createTextBounds, getLastTextIndex } from "@/lib";
 
-import type { CreateTextBoundsFunction } from "../../../lib";
+import type { CreateTextBoundsFunction } from "@/lib";
 import type {
   EmptyOperator,
   IOperatorContext,

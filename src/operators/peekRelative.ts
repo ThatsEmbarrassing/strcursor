@@ -1,4 +1,4 @@
-import { createEmptyOperator } from "../stringCursor";
+import { createEmptyOperator } from "@/stringCursor";
 import { calculateRelative } from "./calculateRelative";
 
 export interface CharObject {

@@ -1,4 +1,4 @@
-import { createEmptyOperator } from "../stringCursor";
+import { createEmptyOperator } from "@/stringCursor";
 
 /**
  * @group operators

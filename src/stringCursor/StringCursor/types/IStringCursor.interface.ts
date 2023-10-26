@@ -1,5 +1,9 @@
-import type { BoundOperator } from "../../operator";
-import type { Operator, EmptyOperator, IOperatorContext } from "../../operator";
+import type {
+  BoundOperator,
+  Operator,
+  EmptyOperator,
+  IOperatorContext,
+} from "@/stringCursor/operator";
 
 export interface IStringCursor {
   /**

@@ -1,4 +1,4 @@
-import { createEmptyOperator } from "../stringCursor";
+import { createEmptyOperator } from "@/stringCursor";
 
 export const calculateRelative = createEmptyOperator(
   ({ getPosition, clamp }, step: number) => {
